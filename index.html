@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+
+Website made by JerosGamer89
+for the 2.2 GDPS Editor Demonlist
+
+If you want to copy the source
+code or just look at it, please
+go to the repository:
+https://github.com/Ascript89/gdpseditor-demonlist
+
+-->
+
+<head>
+	<meta property="og:site_name" content="Eggland GDPS Demonlist" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Eggland GDPS website" />
+	<meta property="og:description" content="Check out the 2.2 GDPS Demon list" />
+	<meta id="meta-image" property="og:image" itemprop="image" content="https://media.discordapp.net/attachments/839834610799607818/893834533265358858/Extreme_Demon.png" />
+	<meta name="author" content="Eggland GDPS" />
+  	<meta name="keywords" content="gdps editor 2.2, Eggland GDPS,demonlist,gd demonlist" />
+  	<meta name="description" content="" />
+
+	<link rel="icon" href="assets/Extreme_Demon.png" />
+	<title>Eggland GDPS Demonlist</title>
+
+	<meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body id="top">
+
+    <div class="mobile-warning">
+        Your screen is too small, please rotate the device to watch this page.
+    </div>
+
+    <nav>
+        <img src="assets/logo.jpg" />
+        <span class="nav-title1">Demonlist</span>
+        <span class="nav-title2">Eggland GDPS</span>
+
+        <a href="http://egglandgdps.7m.pl/database/tools/">Visit website</a>
+        <a target="_blank" href="https://discord.gg/7Z4Hy3ZaYh">Join us on Discord (Download)</a>
+    </nav>
+
+    <div class="home-banner">
+        <span>Eggland GDPS Demonlist</span>
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search a level...">
+    </div>
+
+    <ol id="lc">
+
+        <li>
+            <div class="li-content">
+                <img src="assets/demon/insane.png" />
+                <label>Abyss</label>
+                <span>SuperSnowBallX</span>
+                <!--<a class="yt" target="_blank" href="https://youtu.be/Xx_o0malrK0">Watch on YouTube</a>-->
+                <a class="id"> <span>ID:&nbsp;</span> 136</a>
+            </div>
+        </li>
+
+        <li>
+            <div class="li-content">
+                <img src="assets/demon/insane.png" />
+                <label>SoNiC Infinity</label>
+                <span>egg</span>
+                <!--<a class="yt" target="_blank" href="https://www.youtube.com/watch?v=hmfcOBN0OEA&ab_channel=Combinah">Watch on YouTube</a>-->
+                <a class="id"> <span>ID:&nbsp;</span> 116</a>
+            </div>
+        </li>
+
+        <li>
+            <div class="li-content">
+                <img src="assets/demon/hard.png" />
+                <label>Lettuce</label>
+                <span>egg</span>
+                <a class="id"> <span>ID:&nbsp;</span> 243</a>
+            </div>
+        </li>
+
+        <li>
+            <div class="li-content">
+                <img src="assets/demon/hard.png" />
+                <label>Demon Name</label>
+                <span>Author name</span>
+                <!--<a class="yt" target="_blank" href="https://youtube.com/link">Watch on YouTube</a>-->
+                <a class="id"> <span>ID:&nbsp;</span> 000000</a>
+            </div>
+        </li>
+
+        <li>
+            <div class="li-content">
+                <img src="assets/demon/hard.png" />
+                <label>Demon Name</label>
+                <span>Author name</span>
+                <!--<a class="yt" target="_blank" href="https://youtube.com/link">Watch on YouTube</a>-->
+                <a class="id"> <span>ID:&nbsp;</span> 000000</a>
+            </div>
+        </li>
+
+    </ol>
+
+    <footer>
+        <a href="#top">Go to the top</a>
+        <p>Seems you reached the end of the list :)<br></p>
+        <span>EgglandGDPS  |  Website by JerosGamer89</span>
+    </footer>
+
+
+    <script>
+        function myFunction() {
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById('myInput');
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("lc");
+          li = ul.getElementsByTagName('li');
+
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("label")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+</body>
+</html>
